@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600;700;800&display=swap');
+
+
+/* COLORES OFICIALES SURA */
+:root {
+  --azul-oscuro: #0033A0;
+  --azul-medio: #0072CE;
+  --amarillo-sura: #FFD100;
+  --blanco: #FFFFFF;
+  --gris-claro: #F4F6F8;
+}
+
+/* ESTILO GENERAL */
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--gris-claro);
+  color: var(--azul-oscuro);
+}
+
+/* NAVS Y ENCABEZADO */
+header {
+  background-color: var(--azul-medio);
+  color: var(--blanco);
+
+/* La unidad "rem" se basa en el tamaño de fuente raíz del documento
+Si el tamaño de fuente raíz (por defecto del navegador) es 16 píxeles,
+entonces:
+
+1rem = 16px
+
+1.5rem = 24px
+
+2rem = 32px, etc. */
+
+  padding: 1rem 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+  margin: 0.5rem 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin: 0.5rem 1rem;
+}
+
+nav a {
+  color: var(--blanco);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: var(--amarillo-sura);
+  color: var(--azul-oscuro);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* SECCION DE BIENVENIDA */
+.section-inicio {
+  background-color: var(--blanco);
+  width: 85%;
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2rem 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 51, 160, 0.15);
+  text-align: center;
+}
+
+.section-inicio h2 {
+  color: var(--azul-oscuro);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.section-inicio p {
+  color: var(--azul-oscuro);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* PIE DE PAGINA */
+footer {
+  background-color: var(--azul-oscuro);
+  color: var(--blanco);
+  text-align: center;
+  padding: 1.2rem 0;
+  margin-top: 3rem;
+}
+
+footer p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+}
+
+/* DISEÑO RESPONSIVO */
+@media (max-width: 600px) {
+  nav li {
+    margin: 0.4rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+
+  .section-inicio {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .section-inicio h2 {
+    font-size: 1.3rem;
+  }
+
+  .section-inicio p {
+    font-size: 0.95rem;
+  }
+}
+
+ul {
+  list-style: none;   /* ELIMINA LOS PUNTOS DE LAS LISTAS(•) */
+  padding: 0;         /* QUITA EL ESPACIO A LA IZQUIERDA */
+  margin: 0;          /* QUITA MARGENES EXTERNOS */
+}
+
